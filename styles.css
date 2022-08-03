@@ -12,10 +12,12 @@
 
 html{
     scroll-behavior: smooth;
-    --coloruno:rgb(255, 185, 79);
-    --letras1: black;
-    --letras2:white;
-    --fondo:rgb(252, 246, 244)
+    --coloruno:rgb(209, 143, 0);
+    --letras1: rgb(224, 222, 222);
+    --letras2:rgb(10, 10, 10);
+    --fondo:rgb(34,34,34);
+    --letrasproductos:rgb(224, 222, 222);
+    --fondoproductos: rgb(10,10,10);
 }
 body{
     background-color:var(--fondo);
@@ -40,7 +42,7 @@ header{
 }
 .marca-inicio a h1{
     color: var(--letras1);
-    font-size: 20px;
+    font-size: 35px;
 }
 .marca-inicio img{
     width: 40px;
@@ -54,8 +56,8 @@ header{
     overflow-x: auto;
     overflow-y:hidden;
     top: 60px;
-    background-color:rgb(255, 255, 255);
-    border-bottom: solid 1px rgb(199, 199, 199);
+    background-color:rgb(10, 10, 10);
+    border-bottom: solid 1px rgb(80, 80, 80);
     max-width: 1430px;
 }
 
@@ -90,7 +92,7 @@ header{
 
 .titulos h2{
     text-align: center;
-    color: black;
+    color: rgb(224, 222, 222);
     font-size: 30px;
 }
 /* ------------- PRODUCTOS ------------- */
@@ -111,7 +113,7 @@ header{
     border-radius: 10px;
 /*     border: solid 2px rgb(199, 199, 199); */
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    background-color:var(--fondoproductos);
     height: 100px;
     display: flex;
     padding: 5px;
@@ -123,15 +125,17 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+    color: var(--letrasproductos);
 }
 
 .nombre-producto{
     font-size: 20px;
+    color: var(--letrasproductos);
 }
 
 .descripcion-producto{
     font-size: 10px;
+    color: var(--letrasproductos);
 }
 
 .imagen-producto{
